@@ -1,0 +1,37 @@
+body {
+  background-color: #3287dc;
+}
+
+.main-div {
+  height: 60%;
+  width: 75%;
+  background-color: rgba(228, 213, 213, 0.744);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  /* border: 1px #000 solid; */
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.row .col-6>* {
+  margin: 5px;
+}
+
+.form-select {
+  width: 70px;
+}
+
+.notEnough {
+  text-align: center;
+}
+
+.notEnough .answerShow {
+  width: 30px;
+}

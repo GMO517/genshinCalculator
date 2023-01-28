@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>天賦書計算機</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./public/style.css">
+</head>
+
+
+<body>
+  <div class="main-div">
+    <div class="title">
+      <h1>天賦書計算器</h1>
+    </div>
+    <div class="container">
+      <div class="existingBook">
+        <div class="row">
+          <div class="col-6">
+            綠書:<input type="text" id="aBookInput" value="0"><br>
+            藍書:<input type="text" id="bBookInput" value="0"><br>
+            金書:<input type="text" id="cBookInput" value="0"><br>
+          </div>
+          <div class="col-6">
+            灰材:<input type="text" id="aMaterialInput" value="0"><br>
+            綠材:<input type="text" id="bMaterialInput" value="0"><br>
+            藍材:<input type="text" id="cMaterialInput" value="0"><br>
+          </div>
+        </div>
+        <div class="week" style="padding:10px">
+          周本材料:
+          <input type="text" id="weekMaterialInput" value="0">
+          <button type="action" id="input-submit" value="submit">送出</button>
+        </div>
+
+      </div>
+
+      <div class="aSkillLevel">
+        <div class="row">
+          <div class="col-4">
+            現在技能等級:
+            <select class="form-select" id="aSkillBefore" aria-label="Default select example">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            目標:
+            <select class="form-select" id="aSkillAfter" aria-label="Default select example">
+              <option value="10">10</option>
+              <option value="9">9</option>
+              <option value="8">8</option>
+              <option value="7">7</option>
+              <option value="6">6</option>
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+
+          <div class="col-4">
+            <div class="eSkillLevel">現在技能等級:
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              目標:
+              <select class="form-select" aria-label="Default select example">
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="qSkillLevel">現在技能等級:
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              目標:
+              <select class="form-select" aria-label="Default select example">
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="notEnough">
+        你還缺:
+        <div class="row">
+          <div class="col-12">
+            綠書:<input type="text" class="answerShow" disabled>個
+            藍書:<input type="text" class="answerShow" disabled>個
+            金書:<input type="text" class="answerShow" disabled>個
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            灰材:<input type="text" class="answerShow" disabled>個
+            綠材:<input type="text" class="answerShow" disabled>個
+            藍材:<input type="text" class="answerShow" disabled>個
+          </div>
+        </div>
+        周本材料:<input type="text" class="answerShow" disabled>個
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+<!-- Bootstrap CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ---------- -->
+
+<!-- jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous"></script>
+<!-- ---------- -->
+<script src="/script.js"></script>
+
+</html>
