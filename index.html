@@ -27,6 +27,7 @@
             灰材:<input type="text" id="aMaterialInput" value="0"><br>
             綠材:<input type="text" id="bMaterialInput" value="0"><br>
             藍材:<input type="text" id="cMaterialInput" value="0"><br>
+            紫材:<input type="text" id="cMaterialInput" value="0"><br>
           </div>
         </div>
         <div class="week" style="padding:10px">
@@ -69,7 +70,7 @@
 
           <div class="col-4">
             <div class="eSkillLevel">現在技能等級:
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" id="eSkillBefore" aria-label="Default select example">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -82,7 +83,7 @@
                 <option value="10">10</option>
               </select>
               目標:
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" id="eSkillAfter" aria-label="Default select example">
                 <option value="10">10</option>
                 <option value="9">9</option>
                 <option value="8">8</option>
@@ -97,7 +98,7 @@
           </div>
           <div class="col-4">
             <div class="qSkillLevel">現在技能等級:
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" id="qSkillBefore" aria-label="Default select example">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -110,7 +111,7 @@
                 <option value="10">10</option>
               </select>
               目標:
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" id="qSkillAfter" aria-label="Default select example">
                 <option value="10">10</option>
                 <option value="9">9</option>
                 <option value="8">8</option>
@@ -140,6 +141,7 @@
             灰材:<input type="text" class="answerShow" disabled>個
             綠材:<input type="text" class="answerShow" disabled>個
             藍材:<input type="text" class="answerShow" disabled>個
+            紫材:<input type="text" class="answerShow" disabled>個
           </div>
         </div>
         周本材料:<input type="text" class="answerShow" disabled>個
