@@ -3,8 +3,10 @@ body {
 }
 
 .main-div {
-  height: 60%;
+  height: 75%;
+  min-height: 500px;
   width: 75%;
+  max-width: 650px;
   background-color: rgba(228, 213, 213, 0.744);
   position: relative;
   top: 50%;
@@ -14,6 +16,7 @@ body {
   padding: 20px;
   /* border: 1px #000 solid; */
   border-radius: 10px;
+
 }
 
 .title {

@@ -56,9 +56,11 @@ submitBtn.addEventListener('click', function () {
 
   // console.log(process(aSkillEnd) - process(aSkillStart));
   let aNeed = answer(aSkillStart, aSkillEnd, gBook, bBook, pBook);
+  console.log(aNeed);
   let eNeed = answer(eSkillStart, eSkillEnd, gBook, bBook, pBook);
+  console.log(eNeed);
   let qNeed = answer(qSkillStart, qSkillEnd, gBook, bBook, pBook);
-
+  console.log(qNeed);
 });
 
 function process(a) {
@@ -101,7 +103,7 @@ function answer(start, end, gB, bB, pB) {
   let have = process(start);
   let need = process(end);
   let total = consume(need, have);
-  console.log(total);
+  // console.log(total);
 
   gBookTotalNeed = gB - total[0];
   bBookTotalNeed = bB - total[1];
@@ -116,8 +118,11 @@ function answer(start, end, gB, bB, pB) {
   if (pBookTotalNeed < 0) {
     pBookTotalNeed = -pBookTotalNeed;
   }
+
   return [gBookTotalNeed, bBookTotalNeed, pBookTotalNeed]
 }
-function add() {
+function add(input, need) {
   //最後需求加總 
+  
+
 }
